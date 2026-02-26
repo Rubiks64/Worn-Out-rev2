@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Worn Out — The True Cost of Shein</title>
+  <meta name="description" content="See the real environmental and human cost of your Shein haul. Data-driven, Ireland-focused, unflinching."/>
+
+  <!-- Fonts: Bebas Neue (display) + Fraunces (editorial serif) + Libre Baskerville (body) + DM Sans/Mono (UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS — edit any of these files to customise the design -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/calculator.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════════════════ -->
+<nav class="nav" id="mainNav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">WORN<span>OUT</span></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__menu" id="navMenu">
+        <ul class="nav__links">
+          <li><a href="#impact">Impact</a></li>
+          <li><a href="#labour">Labour</a></li>
+          <li><a href="#manipulation">Manipulation</a></li>
+          <li><a href="#ireland">Ireland</a></li>
+          <li><a href="#haul">Haul Calculator</a></li>
+          <li><a href="#alternatives">Act</a></li>
+        </ul>
+        <a href="#haul" class="nav__cta">Build Your Haul</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero__grid-lines"></div>
+  <div class="hero__accent-block"></div>
+
+  <div class="hero__body">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__kicker">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          The True Cost of Fast Fashion — Ireland Edition
+        </div>
+
+        <h1 class="hero__headline">
+          YOUR<br>
+          €6 TOP<br>
+          <span class="hl-green">COSTS MORE</span><br>
+          THAN YOU THINK
+        </h1>
+
+        <p class="hero__sub">
+          Shein is the world's most polluting fashion retailer. Behind every low price is a supply chain 
+          destroying the planet, breaking workers, and draining Ireland's economy. 
+          Build your haul — see the numbers.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#haul" class="btn btn--primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+            Build Your Haul
+          </a>
+          <a href="#impact" class="btn btn--outline">See the Data</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stat strip -->
+  <div class="hero__stats">
+    <div class="hero__stat">
+      <div class="hero__stat-num green" data-count="26.2" data-decimals="1" data-suffix="M">26.2M</div>
+      <div class="hero__stat-label">Tonnes CO₂e emitted by Shein in 2024</div>
+    </div>
+    <div class="hero__stat">
+      <div class="hero__stat-num amber" data-count="75" data-suffix="hrs">75hrs</div>
+      <div class="hero__stat-label">Working week in Shein supplier factories</div>
+    </div>
+    <div class="hero__stat">
+      <div class="hero__stat-num rust" data-count="53" data-suffix="kg">53kg</div>
+      <div class="hero__stat-label">Irish per-capita textile consumption — EU avg is 20kg</div>
+    </div>
+    <div class="hero__stat">
+      <div class="hero__stat-num" data-count="47" data-suffix="×">47×</div>
+      <div class="hero__stat-label">More CO₂ from air freight vs ocean freight per parcel</div>
+    </div>
+  </div>
+
+  <!-- Ticker -->
+  <div class="ticker-bar">
+    <div class="ticker-inner" id="ticker">
+      <span>26.2 million tonnes CO₂ in 2024</span>
+      <span>Emissions up 23% year-on-year</span>
+      <span>75-hour working weeks documented 2021–2025</span>
+      <span>Ireland discards 3× the EU average in textiles</span>
+      <span>47× more CO₂ from air freight than ocean freight</span>
+      <span>81.5% of Shein fabrics are synthetic polyester</span>
+      <span>40% of clothes discarded in Ireland never worn</span>
+      <span>€27.9bn — Ireland's potential carbon credit bill</span>
+      <span>Up to 10,000 new styles added per day</span>
+      <span>Workers earn ~€278/month basic — living wage is €802</span>
+      <!-- duplicate for seamless loop -->
+      <span>26.2 million tonnes CO₂ in 2024</span>
+      <span>Emissions up 23% year-on-year</span>
+      <span>75-hour working weeks documented 2021–2025</span>
+      <span>Ireland discards 3× the EU average in textiles</span>
+      <span>47× more CO₂ from air freight than ocean freight</span>
+      <span>81.5% of Shein fabrics are synthetic polyester</span>
+      <span>40% of clothes discarded in Ireland never worn</span>
+      <span>€27.9bn — Ireland's potential carbon credit bill</span>
+      <span>Up to 10,000 new styles added per day</span>
+      <span>Workers earn ~€278/month basic — living wage is €802</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     IRELAND BANNER (prominent, above main content)
+═══════════════════════════════════════════════════════ -->
+<section class="section section--alt" id="ireland">
+  <div class="container">
+
+    <div class="ireland-banner reveal">
+      <div>
+        <div class="ireland-banner__flag">🇮🇪</div>
+      </div>
+      <div>
+        <div class="ireland-banner__title">IRELAND'S FAST FASHION CRISIS</div>
+        <p class="ireland-banner__text">
+          Irish consumers discard <strong style="color:var(--dark-text)">35kg of textiles per person per year</strong> — nearly three times the EU average of 12kg. 
+          We consume<strong style="color:var(--dark-text)"> 53kg </strong> per person versus the EU's  <strong style="color:var(--dark-text)"> 20kg.</strong> 
+          <br> <strong style="color:var(--dark-text)">40%  </strong>of clothing discarded in Ireland has never been worn. 
+          Shein's model — 600,000 styles, up to 20,000 new listings daily, prices engineered for disposal — 
+          makes this worse.
+        </p>
+      </div>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat-box reveal reveal-d1">
+        <div class="stat-box__num">53kg</div>
+        <div class="stat-box__label">Irish per-capita textile consumption</div>
+        <div class="stat-box__sub">The EU average is just 20kg. Ireland is the outlier.</div>
+      </div>
+      <div class="stat-box reveal reveal-d2">
+        <div class="stat-box__num amber">40%</div>
+        <div class="stat-box__label">Of clothing discarded in Ireland never worn</div>
+        <div class="stat-box__sub">Still tagged. Straight to landfill. The ultimate waste.</div>
+      </div>
+      <div class="stat-box reveal reveal-d3">
+        <div class="stat-box__num rust">€27.9bn</div>
+        <div class="stat-box__label">Potential carbon credit bill for Ireland by 2030</div>
+        <div class="stat-box__sub">Ireland overshot its first carbon budget by 10M tonnes. Textile over-consumption contributes directly.</div>
+      </div>
+    </div>
+
+    <div class="stat-row reveal">
+      <div class="stat-box">
+        <div class="stat-box__num">77%</div>
+        <div class="stat-box__label">Of women under 35 buy from low-cost shops</div>
+        <div class="stat-box__sub">Social pressure and cost-of-living drive young Irish consumers toward Shein.</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-box__num amber">629k</div>
+        <div class="stat-box__label">People below Ireland's poverty line (€366/week)</div>
+        <div class="stat-box__sub">1 in 10 Irish people. 15% of children in relative income poverty. Shein exploits this directly.</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-box__num rust">1,357kg</div>
+        <div class="stat-box__label">CO₂ produced per Irish person from textile waste annually</div>
+        <div class="stat-box__sub">Ireland's textile waste carbon footprint is among the worst in Europe.</div>
+      </div>
+    </div>
+
+    <p class="source-note reveal">Sources: EPA Textiles Attitudes and Behaviours Report; RTE article on Irish textile consumption; CSO Enforced Deprivation Report; Public Policy.ie Poverty Focus; Visa Consumer Survey on Clothing Spends; EU Carbon Budget data</p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     ENVIRONMENTAL IMPACT
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="impact">
+  <div class="container">
+    <div class="sh reveal">
+      <div class="label label--green sh__label">Environmental Impact</div>
+      <h2 class="sh__title">The planet pays<br>the <em>real price.</em></h2>
+      <p class="sh__body">Shein's own sustainability disclosures confirm what scientists have documented for years. These figures are not estimates — they are taken directly from the company's published reports.</p>
+    </div>
+
+    <div class="impact-grid">
+
+      <!-- Carbon -->
+      <div class="icard reveal reveal-d1">
+        <div class="icard__stripe icard__stripe--green"></div>
+        <div class="icard__icon icard__icon--green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="icard__cat icard__cat--green">Carbon Emissions</div>
+        <h3 class="icard__title">Emissions growing faster than revenue</h3>
+        <div class="icard__stat icard__stat--green">26.2M</div>
+        <div class="icard__stat-label">Metric tonnes CO₂e emitted in 2024</div>
+        <p class="icard__text">Shein's 2024 emissions rose 23.1% year-on-year — itself following an 81% increase from 2022. Upstream transport alone produced 8.52 million tonnes. Stand.earth ranked Shein the single largest polluting retailer in global fashion. Shein's net-zero pledge is 2050; at current trajectory, emissions are doubling every two years.</p>
+        <div class="source-note">Shein 2024 Sustainability Report; Stand.earth Fashion Accountability Report 2024; Yale Climate Connections, Sept 2024</div>
+      </div>
+
+      <!-- Water -->
+      <div class="icard reveal reveal-d2">
+        <div class="icard__stripe icard__stripe--amber"></div>
+        <div class="icard__icon icard__icon--amber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l6 10a6 6 0 11-12 0l6-10z"/></svg>
+        </div>
+        <div class="icard__cat icard__cat--amber">Water Usage</div>
+        <h3 class="icard__title">Thousands of litres for a single garment</h3>
+        <div class="icard__stat icard__stat--amber">2,700L</div>
+        <div class="icard__stat-label">Fresh water to produce one cotton t-shirt</div>
+        <p class="icard__text">A single t-shirt requires 2,700 litres — enough drinking water for one person for 900 days. Jeans require up to 7,000 litres. The fashion industry uses 93 billion cubic metres of water annually. Textile dyeing is one of the world's largest sources of freshwater pollution, with chemical runoff contaminating rivers near factories.</p>
+        <div class="source-note">European Parliament (2022); UN Environment Programme; Greenpeace Aotearoa</div>
+      </div>
+
+      <!-- Microplastics -->
+      <div class="icard reveal reveal-d1">
+        <div class="icard__stripe icard__stripe--rust"></div>
+        <div class="icard__icon icard__icon--rust">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="2"/><circle cx="16" cy="7" r="1.5"/><circle cx="12" cy="15" r="2.5"/><circle cx="6" cy="17" r="1.5"/><circle cx="18" cy="16" r="2"/></svg>
+        </div>
+        <div class="icard__cat icard__cat--rust">Microplastic Pollution</div>
+        <h3 class="icard__title">Invisible plastic in every ecosystem</h3>
+        <div class="icard__stat icard__stat--rust">81.5%</div>
+        <div class="icard__stat-label">Of Shein's fabrics are synthetic polyester</div>
+        <p class="icard__text">Every wash of a synthetic garment releases hundreds of thousands of microplastic fibres. Fashion contributes 500,000 tonnes of microplastics to oceans per year through laundry — 35% of all ocean microplastics. These particles have been detected in human blood, lungs, and breast milk. Polyester takes hundreds of years to biodegrade and only 6% of Shein's polyester is recycled, compared to Adidas at 99% and H&M at 94%.</p>
+        <div class="source-note">IUCN (2017); Shein 2024 Sustainability Report; UNEP; journal article on clothing brands' recycled polyester use; Greentimes</div>
+      </div>
+
+      <!-- Air Freight -->
+      <div class="icard reveal reveal-d2">
+        <div class="icard__stripe icard__stripe--amber"></div>
+        <div class="icard__icon icard__icon--amber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16l-9-9L3 16"/><path d="M3 16h18"/><path d="M7 16l5-10 5 10"/></svg>
+        </div>
+        <div class="icard__cat icard__cat--amber">Shipping Model</div>
+        <h3 class="icard__title">47× the emissions of ocean freight — by design</h3>
+        <div class="icard__stat icard__stat--amber">47×</div>
+        <div class="icard__stat-label">More CO₂ from air freight vs ocean freight per ton-mile</div>
+        <p class="icard__text">Shein ships individual parcels by air from China to exploit the EU's €150 customs exemption threshold — packages under this value enter duty-free. This makes air freight economically viable while generating 47 times more greenhouse gas per ton-mile than ocean freight. From July 2026, the EU is implementing a €3 fee on all previously exempt packages.</p>
+        <div class="source-note">InTek Logistics (2023) Air Freight vs Ocean Freight; presentation research by Staunton, Devlin, Murphy, Heffernan (2025)</div>
+      </div>
+
+      <!-- Landfill — full width -->
+      <div class="icard icard--full reveal">
+        <div class="icard__stripe icard__stripe--dark"></div>
+        <div class="icard__layout">
+          <div>
+            <div class="icard__icon icard__icon--dark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+            </div>
+            <div class="icard__cat">Textile Waste</div>
+            <h3 class="icard__title">A rubbish truck of clothes dumped every second</h3>
+            <div class="icard__stat">92M</div>
+            <div class="icard__stat-label">Tonnes of textile waste globally per year</div>
+          </div>
+          <div>
+            <p class="icard__text" style="margin-bottom:var(--sp-4)">
+              Of the 100 billion garments produced globally each year, 92 million tonnes end up in landfill. 
+              87% of all clothing materials end up in incinerators or landfill — only 1% is recycled. 
+              Shein lists up to 10,000–20,000 new products per day, each at prices that make disposal after a handful of wears economically rational for the consumer.
+            </p>
+            <p class="icard__text">
+              In Ireland specifically, 40% of discarded clothing has never been worn. 
+              The Irish fast fashion habit is not just a personal choice — it is a national environmental emergency. 
+              Ireland overshot its first carbon budget by 10 million tonnes. Textile consumption contributes to that overshoot.
+            </p>
+            <div class="source-note">Earth.Org; Ellen MacArthur Foundation; European Environment Agency (2022); The Roundup.org on global textile waste</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     LABOUR
+═══════════════════════════════════════════════════════ -->
+<section class="section section--alt" id="labour">
+  <div class="container">
+    <div class="sh reveal">
+      <div class="label label--rust sh__label">Labour &amp; Human Rights</div>
+      <h2 class="sh__title">The workers behind<br>your <em class="amber">purchase.</em></h2>
+      <p class="sh__body">Multiple independent investigations from 2021 to 2025 document the same reality inside Shein's supplier network. The facts below are cited from original reporting, not secondhand.</p>
+    </div>
+
+    <div class="labour-layout">
+      <div class="reveal">
+        <div class="labour-quote">
+          <div class="labour-quote__text">
+            "I work every day from 8 in the morning to 10:30 at night and take one day off each month. I can't afford any more days off because it costs too much."
+          </div>
+          <div class="labour-quote__attr">Shein supplier factory worker, Guangzhou, China — Public Eye investigation (2023), corroborated BBC investigation January 2025</div>
+        </div>
+        <p style="font-size:var(--text-sm);color:var(--ink-light);line-height:1.8">
+          The BBC spent days in Panyu, Guangzhou — known as "Shein Village" — in January 2025, 
+          visiting ten factories and interviewing over 20 workers. What they found matched 
+          four years of prior investigations: routine 75-hour weeks, in direct violation of 
+          Chinese labour law and Shein's own supplier code.
+        </p>
+      </div>
+
+      <div class="fact-list reveal reveal-d2">
+        <div class="fact-item">
+          <div class="fact-item__num">75hrs</div>
+          <div class="fact-item__text"><strong>Documented working week (2021–2025)</strong> — Chinese labour law limits workers to 40 hours per week with a maximum of 36 hours' overtime per month. Shein's own supplier code caps at 60 hours.</div>
+        </div>
+        <div class="fact-item">
+          <div class="fact-item__num amber">€278</div>
+          <div class="fact-item__text"><strong>Basic monthly wage (2,400 yuan) at Shein supplier factories</strong> — the living wage in China is 6,512 yuan (~€802/month). Even with extensive overtime, many workers earn between 4,000–10,000 yuan.</div>
+        </div>
+        <div class="fact-item">
+          <div class="fact-item__num">71%</div>
+          <div class="fact-item__text"><strong>Of Shein's audited suppliers scored C or lower</strong> on Shein's own internal grading system in 2023, per Shein's own sustainability report.</div>
+        </div>
+        <div class="fact-item">
+          <div class="fact-item__num amber">2</div>
+          <div class="fact-item__text"><strong>Child labour violations found in supply chain audits</strong> — confirmed in Shein's 2023 Sustainability Report. Shein states these were remediated. Independent investigators have not been able to verify all supply chain conditions.</div>
+        </div>
+        <div class="fact-item">
+          <div class="fact-item__num" style="font-size:var(--text-xl);color:var(--ink-faint);min-width:64px">Note</div>
+          <div class="fact-item__text">Shein disputes some findings, citing third-party audits showing workers earn more than twice the local minimum wage. These averages do not account for documented working hours. <span style="color:var(--ink-faint)">Sources: Public Eye (2021, 2023); BBC Jan 2025; CNN Business May 2024; Shein 2023 &amp; 2024 Sustainability Reports; Asia Floor Wage Alliance.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     MANIPULATION TACTICS
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="manipulation">
+  <div class="container">
+    <div class="sh reveal">
+      <div class="label label--amber sh__label">How They Keep You Buying</div>
+      <h2 class="sh__title">Shein doesn't sell clothes.<br>It <em>engineers addiction.</em></h2>
+      <p class="sh__body">Shein capitalises on System 1 thinking — the fast, impulsive decision-making system identified by Nobel-prize winning psychologist Daniel Kahneman. Every design choice is deliberate.</p>
+    </div>
+
+    <div class="tactic-grid">
+
+      <div class="tactic-card reveal reveal-d1">
+        <div class="tactic-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3 class="tactic-card__title">Fake Countdowns &amp; Artificial Urgency</h3>
+        <p class="tactic-card__text">Time-limited deals with countdowns that reset on refresh. "Only 3 left" warnings that never resolve. Sitewide coupons with hour-long expiries. All engineered to prevent System 2 (rational) thinking — the kind that asks "do I actually need this?"</p>
+      </div>
+
+      <div class="tactic-card reveal reveal-d2">
+        <div class="tactic-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
+        </div>
+        <h3 class="tactic-card__title">Influencer &amp; TikTok Algorithm Exploitation</h3>
+        <p class="tactic-card__text">Shein sponsors #sheinhaul content at scale across TikTok and Instagram, targeting women under 30. It leverages TikTok's algorithm — which holds vast behavioural data — to serve new styles to exactly the people most likely to impulse purchase. AI predicts which styles will trend before they do.</p>
+      </div>
+
+      <div class="tactic-card reveal reveal-d3">
+        <div class="tactic-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h3 class="tactic-card__title">Gamification &amp; Data Harvesting</h3>
+        <p class="tactic-card__text">Spinning wheels, points systems, and daily check-in rewards that require personal data to unlock. The app is designed to be opened daily — not to browse, but to be rewarded. This data also feeds Shein's AI demand prediction engine, making its supply chain hyper-efficient at the cost of consumer autonomy.</p>
+      </div>
+
+      <div class="tactic-card reveal reveal-d1">
+        <div class="tactic-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+        </div>
+        <h3 class="tactic-card__title">Prices Engineered for Disposal</h3>
+        <p class="tactic-card__text">A €5 top is not an opportunity to save money — it is a price point that makes the item feel disposable. This is intentional. When clothes are cheap enough to throw away, consumers buy more, more often. Shein's business model requires volume, and volume requires disposability. Survey data from Irish students confirms price is the dominant reason for purchasing.</p>
+      </div>
+
+      <div class="tactic-card reveal reveal-d2">
+        <div class="tactic-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3 class="tactic-card__title">Social Conformity &amp; FOMO</h3>
+        <p class="tactic-card__text">Conformity is particularly high among young Irish consumers. Trends spread rapidly, and Shein — with 600,000 styles and 10,000–20,000 new daily additions — ensures it can supply any trend the moment it emerges. The fear of being seen wearing "last week's style" is the emotional engine. One interviewee stated "not everyone can afford to buy from other brands."</p>
+      </div>
+
+      <div class="tactic-card reveal reveal-d3">
+        <div class="tactic-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3 class="tactic-card__title">"Shop Like a Billionaire" — Exploiting Aspiration</h3>
+        <p class="tactic-card__text">Temu's slogan directly targets the financial aspirations of young Irish consumers who, in a cost-of-living crisis, want to appear wealthy. 629,000 Irish people live below the poverty line. 7.4% cannot afford brand-new clothing. These retailers do not solve that problem — they profit from it while externalising the true costs onto the planet and workers.</p>
+      </div>
+
+    </div>
+    <p class="source-note reveal" style="margin-top:var(--sp-8)">Sources: Daniel Kahneman, "Thinking, Fast and Slow" (2011); presentation research by Staunton, Devlin, Murphy, Heffernan (2025); CSO Enforced Deprivation Report; Public Policy.ie</p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     HAUL CALCULATOR
+═══════════════════════════════════════════════════════ -->
+<section class="section section--alt" id="haul">
+  <div class="container">
+    <div class="sh reveal" style="text-align:center; max-width:640px; margin-inline:auto;">
+      <div class="label label--green sh__label" style="justify-content:center;">Haul Calculator</div>
+      <h2 class="sh__title">Build your haul.<br><em>See what it costs the planet.</em></h2>
+      <p class="sh__body" style="margin-inline:auto">Add items to your cart exactly as you would on Shein, then see the full environmental cost — including shipping.</p>
+    </div>
+
+    <div class="calc-wrap reveal">
+
+      <!-- Left: Product picker + cart -->
+      <div class="calc-panel">
+        <div class="calc-panel__head">
+          <h3>Add to haul</h3>
+          <p>Tap a product to add it to your order</p>
+        </div>
+        <div class="calc-panel__body">
+          <div class="prod-grid" id="prodGrid">
+
+            <button class="prod-btn" onclick="addToCart('tshirt')">
+              <div class="prod-btn__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d= "M4,12,2,8,6,3H9a3,3,0,0,0,6,0h3l4,5-2,4-3-2V21H7V10Z"/></svg></div>
+              <div><div class="prod-btn__label">T-Shirt / Top</div><span class="prod-btn__price">avg. €5 on Shein</span></div>
+            </button>
+
+            <button class="prod-btn" onclick="addToCart('dress')">
+              <div class="prod-btn__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.3 23c-0.7-7.7-0.1-5.1-2.7-11.8V9.3l1.1-3.5c0.1-0.3 0-0.5-0.1-0.8-0.7-1.1-1.1-2.4-0.9-3.5C17.7 0.5 17.3 0 16.8 0h-2.5c-0.4 0-0.7 0.2-0.8 0.6-0.4 0.9-0.5 1.8-1.5 1.8s-1.1-0.8-1.5-1.8C10.4 0.2 10.1 0 9.7 0H7.2C6.7 0 6.3 0.5 6.4 1c0.1 1.1-0.2 2.4-0.9 3.5-0.2 0.2-0.2 0.5-0.1 0.8l1.1 3.5v2.5C3.8 17.9 4.4 15.3 3.7 23c0 0.5 0.4 1 0.9 1h14.9c0.5 0 0.9-0.5 0.8-1z M8.1 1.8h0.9l0.2 0.4C10 3.3 11.1 4.1 12.3 4.1s2.3-0.8 2.8-1.9l0.2-0.4h0.9c0.1 1.1 0.4 2.3 1 3.3l-0.8 2.6H7.9L7.1 5.1C7.7 4.1 8 2.9 8.1 1.8z M15.8 9.4v1.1H8.2V9.4H15.8z M5.5 22.2c0.6-6.3 0-4.1 2.4-10h8.2c2.4 5.9 1.8 3.7 2.4 10H5.5z"/></svg></div>
+              <div><div class="prod-btn__label">Dress</div><span class="prod-btn__price">avg. €9 on Shein</span></div>
+            </button>
+
+            <button class="prod-btn" onclick="addToCart('jeans')">
+              <div class="prod-btn__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18.5 5.5c-0.6-1-0.7-2.1-0.7-2.7h-1.5v5.7c0 0.1-0.1 0.2-0.1 0.3s-0.2 0.1-0.3 0.1h-1.9c-0.1 0-0.2-0.1-0.3-0.1s-0.1-0.2-0.1-0.3V2.8h-1.5c0 0.4 0 1.1-0.3 1.9-0.3 0.8-0.8 1.6-1.9 2.1-0.6 0.3-1.3 0.5-2.3 0.5v10.1h-0.9v-4.4c-1.9 0-4.3 0-4.3 0-0.2 0-0.3 0.1-0.4 0.2s-0.1 0.3 0.1 0.5l4.2 5.2h1.3h6.6l0.6-6.4c0-0.1 0.1-0.2 0.2-0.2s0.2 0.1 0.2 0.2l1.2 13.5h5.5c0.1 0 0.2-0.1 0.2-0.2V7.3c-0.9 0-1.7-0.2-2.3-0.5-0.7-0.3-1.2-0.8-1.5-1.3z"/></svg></div>
+              <div><div class="prod-btn__label">Jeans</div><span class="prod-btn__price">avg. €14 on Shein</span></div>
+            </button>
+
+            <button class="prod-btn" onclick="addToCart('hoodie')">
+              <div class="prod-btn__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6l3-3h2l3 4 3-4h2l3 3v5h-3v8H7v-8H4V6z"/></svg></div>
+              <div><div class="prod-btn__label">Hoodie</div><span class="prod-btn__price">avg. €12 on Shein</span></div>
+            </button>
+
+            <button class="prod-btn" onclick="addToCart('jacket')">
+              <div class="prod-btn__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5l3-2h4l2 3 2-3h4l3 2v14H3V5z"/><path d="M12 6v13"/></svg></div>
+              <div><div class="prod-btn__label">Jacket / Coat</div><span class="prod-btn__price">avg. €22 on Shein</span></div>
+            </button>
+
+            <button class="prod-btn" onclick="addToCart('swim')">
+              <div class="prod-btn__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v8l-6 2-6-2V3z"/><path d="M6 17h12M6 21h12"/></svg></div>
+              <div><div class="prod-btn__label">Swimwear / Shorts</div><span class="prod-btn__price">avg. €7 on Shein</span></div>
+            </button>
+
+            <button class="prod-btn" onclick="addToCart('shoes')">
+              <div class="prod-btn__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 14l5-8h8l5 5v3H3v-3z"/><path d="M8 14v3M14 14v3"/></svg></div>
+              <div><div class="prod-btn__label">Shoes / Trainers</div><span class="prod-btn__price">avg. €20 on Shein</span></div>
+            </button>
+
+            <button class="prod-btn" onclick="addToCart('acc')">
+              <div class="prod-btn__icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
+              <div><div class="prod-btn__label">Accessories</div><span class="prod-btn__price">avg. €4 on Shein</span></div>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="cart-section">
+          <div class="cart-section__title">Your Haul</div>
+          <div class="cart-list" id="cartList">
+            <div class="cart-empty">Your haul is empty — add items above</div>
+          </div>
+          <button class="calc-run-btn" id="runBtn" onclick="calculateHaul()" disabled>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            Calculate Impact
+          </button>
+          <button onclick="clearCart()" style="width:100%;margin-top:var(--sp-2);font-family:var(--font-ui);font-size:var(--text-xs);color:var(--ink-faint);padding:var(--sp-2);text-align:center;transition:color var(--t-fast)" onmouseover="this.style.color='var(--rust)'" onmouseout="this.style.color='var(--ink-faint)'">
+            Clear haul
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: Results -->
+      <div>
+        <!-- Prompt state -->
+        <div class="results-prompt" id="resultsPrompt">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <h3>Add items to see their true cost</h3>
+          <p>Build your typical Shein haul on the left — we'll show you exactly what it costs in CO₂, water, and microplastics.</p>
+        </div>
+
+        <!-- Results panel -->
+        <div class="results-panel" id="resultsPanel">
+
+          <!-- Dashboard -->
+          <div class="results-dashboard">
+            <div class="results-dashboard__head">
+              <div class="results-dashboard__title">HAUL IMPACT REPORT</div>
+              <div class="results-dashboard__itemcount" id="dashItemCount"></div>
+            </div>
+            <div class="results-metrics">
+              <div class="r-metric">
+                <div class="r-metric__icon r-metric__icon--green">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+                </div>
+                <div class="r-metric__label">Total CO₂ emissions</div>
+                <div class="r-metric__val r-metric__val--green" id="mCO2">—</div>
+                <div class="r-metric__equiv" id="mCO2eq"></div>
+              </div>
+              <div class="r-metric">
+                <div class="r-metric__icon r-metric__icon--amber">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l6 10a6 6 0 11-12 0l6-10z"/></svg>
+                </div>
+                <div class="r-metric__label">Fresh water used in production</div>
+                <div class="r-metric__val r-metric__val--amber" id="mWater">—</div>
+                <div class="r-metric__equiv" id="mWaterEq"></div>
+              </div>
+              <div class="r-metric">
+                <div class="r-metric__icon r-metric__icon--amber">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16l-9-9L3 16"/><path d="M3 16h18"/><path d="M7 16l5-10 5 10"/></svg>
+                </div>
+                <div class="r-metric__label">Shipping CO₂ (air freight)</div>
+                <div class="r-metric__val r-metric__val--amber" id="mShipping">—</div>
+                <div class="r-metric__equiv" id="mShippingEq"></div>
+              </div>
+              <div class="r-metric">
+                <div class="r-metric__icon r-metric__icon--rust">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="9" r="2"/><circle cx="16" cy="7" r="1.5"/><circle cx="12" cy="15" r="2.5"/><circle cx="6" cy="17" r="1.5"/><circle cx="18" cy="16" r="2"/></svg>
+                </div>
+                <div class="r-metric__label">Microplastic fibres (per first wash)</div>
+                <div class="r-metric__val r-metric__val--rust" id="mMicro">—</div>
+                <div class="r-metric__equiv" id="mMicroEq"></div>
+              </div>
+            </div>
+            <div class="shipping-row">
+              <span class="shipping-row__badge">&#9992; Air Freight Note</span>
+              <p class="shipping-row__text" id="shippingNote"></p>
+            </div>
+          </div>
+
+          <!-- Item breakdown -->
+          <div style="background:var(--surface-card);border:1px solid var(--border);border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--shadow-card);">
+            <div style="padding:var(--sp-4) var(--sp-6);border-bottom:1px solid var(--border);background:var(--surface-inset)">
+              <span style="font-family:var(--font-ui);font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-faint)">Item Breakdown</span>
+            </div>
+            <div style="overflow-x:auto">
+              <table class="breakdown-table">
+                <thead>
+                  <tr>
+                    <th>Item</th><th>CO₂</th><th>Water</th><th>Microplastics</th><th>Shein Price</th>
+                  </tr>
+                </thead>
+                <tbody id="breakdownBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Shareable card -->
+          <div class="share-card">
+            <div class="share-card__label">Share Your Impact</div>
+            <div class="share-card__headline" id="shareHeadline"></div>
+            <div class="share-card__stats">
+              <div class="share-stat">
+                <div class="share-stat__num" id="shareCO2">—</div>
+                <div class="share-stat__label">CO₂ Produced</div>
+              </div>
+              <div class="share-stat">
+                <div class="share-stat__num" id="shareWater">—</div>
+                <div class="share-stat__label">Water Used</div>
+              </div>
+              <div class="share-stat">
+                <div class="share-stat__num" id="shareMicro">—</div>
+                <div class="share-stat__label">Microplastic Fibres/Wash</div>
+              </div>
+            </div>
+            <div class="share-card__site">WORN<span>OUT</span> &nbsp;—&nbsp; <span id="shareItems" style="color:var(--dark-muted)"></span></div>
+            <div class="share-actions">
+              <button class="btn btn--ghost-dark" id="copyBtn" onclick="copyShareText()">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                Copy for sharing
+              </button>
+              <button class="btn btn--ghost-dark" onclick="clearCart()">
+                Start over
+              </button>
+            </div>
+          </div>
+
+          <p class="source-note">Calculator estimates based on: European Parliament (2022) textile lifecycle data; UNEP fashion industry reports; IUCN (2017) microplastic research; InTek Logistics (2023) freight comparisons; Shein 2024 Sustainability Report. Individual garment impacts may vary by composition and production method.</p>
+
+        </div><!-- /results-panel -->
+      </div>
+
+    </div><!-- /calc-wrap -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     WASTE BARS
+═══════════════════════════════════════════════════════ -->
+<section class="section" id="waste">
+  <div class="container">
+    <div class="sh reveal">
+      <div class="label label--green sh__label">Textile Waste at Scale</div>
+      <h2 class="sh__title">Fashion's waste crisis<br>in <em>plain numbers.</em></h2>
+    </div>
+
+    <div class="waste-bars">
+      <div class="wbar reveal" data-width="92">
+        <div class="wbar__top"><span class="wbar__name">Global textile waste sent to landfill per year</span><span class="wbar__val">92 million tonnes</span></div>
+        <div class="wbar__track"><div class="wbar__fill wbar__fill--green"></div></div>
+      </div>
+      <div class="wbar reveal reveal-d1" data-width="87">
+        <div class="wbar__top"><span class="wbar__name">Clothing materials ending in incinerators or landfill (global)</span><span class="wbar__val">87%</span></div>
+        <div class="wbar__track"><div class="wbar__fill wbar__fill--amber"></div></div>
+      </div>
+      <div class="wbar reveal reveal-d2" data-width="81.5">
+        <div class="wbar__top"><span class="wbar__name">Shein fabrics that are synthetic polyester (non-biodegradable)</span><span class="wbar__val">81.5%</span></div>
+        <div class="wbar__track"><div class="wbar__fill wbar__fill--rust"></div></div>
+      </div>
+      <div class="wbar reveal reveal-d3" data-width="40">
+        <div class="wbar__top"><span class="wbar__name">Clothing discarded in Ireland that was never worn</span><span class="wbar__val">40%</span></div>
+        <div class="wbar__track"><div class="wbar__fill wbar__fill--amber"></div></div>
+      </div>
+      <div class="wbar reveal reveal-d4" data-width="6">
+        <div class="wbar__top"><span class="wbar__name">Shein's polyester that is recycled (vs Adidas 99%, H&amp;M 94%)</span><span class="wbar__val">6%</span></div>
+        <div class="wbar__track"><div class="wbar__fill wbar__fill--rust"></div></div>
+      </div>
+      <div class="wbar reveal" data-width="1">
+        <div class="wbar__top"><span class="wbar__name">Global clothing that is actually recycled into new fibre</span><span class="wbar__val">Only 1%</span></div>
+        <div class="wbar__track"><div class="wbar__fill wbar__fill--green"></div></div>
+      </div>
+    </div>
+    <p class="source-note reveal" style="margin-top:var(--sp-8)">Sources: Earth.Org; The Roundup.org on global textile waste; Shein 2024 Sustainability Report; journal article on brands' recycled polyester use; EPA Ireland; Ellen MacArthur Foundation</p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     ALTERNATIVES
+═══════════════════════════════════════════════════════ -->
+<section class="section section--alt" id="alternatives">
+  <div class="container">
+    <div class="sh reveal">
+      <div class="label label--green sh__label">What You Can Do</div>
+      <h2 class="sh__title">Fashion doesn't have<br>to cost <em>the earth.</em></h2>
+      <p class="sh__body">The most sustainable garment is one that already exists. These are not sacrifices — they are better choices for you, for workers, and for the planet.</p>
+    </div>
+
+    <div class="alt-grid">
+      <div class="alt-card reveal reveal-d1">
+        <div class="alt-card__num">01</div>
+        <h3 class="alt-card__title">Buy secondhand first</h3>
+        <p class="alt-card__text">Vinted, Depop, Oxfam, and local charity shops offer the same styles at comparable prices — without new production emissions. Survey data shows Vinted and vintage shops are already the preference for many Irish young people. A secondhand garment produces roughly 70% less CO₂ than a new equivalent.</p>
+      </div>
+      <div class="alt-card reveal reveal-d2">
+        <div class="alt-card__num">02</div>
+        <h3 class="alt-card__title">Choose natural fibres when buying new</h3>
+        <p class="alt-card__text">Organic cotton, linen, and hemp biodegrade and release far fewer microplastics. Look for GOTS (Global Organic Textile Standard) or Oeko-Tex certification. Irish-stocked retailers like Penneys carry certified basics — the gap between ethical and affordable is smaller than Shein wants you to believe.</p>
+      </div>
+      <div class="alt-card reveal reveal-d3">
+        <div class="alt-card__num">03</div>
+        <h3 class="alt-card__title">Use Good On You to check brands</h3>
+        <p class="alt-card__text">The Good On You app rates brands on environmental, labour, and animal welfare criteria. Brands assessed by the Fashion Transparency Index or B Corp certification publish verified data on wages, emissions, and materials. Paying more for a garment made ethically is a direct act of accountability.</p>
+      </div>
+      <div class="alt-card reveal reveal-d1">
+        <div class="alt-card__num">04</div>
+        <h3 class="alt-card__title">Wear what you already own</h3>
+        <p class="alt-card__text">87% of Irish people agree it's important to buy clothes that last — yet 40% of discarded clothes in Ireland were never worn. Extending the active life of a garment by 9 months reduces its carbon, water, and waste footprint by 20–30% (WRAP). The opportunity cost of unused clothing is enormous.</p>
+      </div>
+      <div class="alt-card reveal reveal-d2">
+        <div class="alt-card__num">05</div>
+        <h3 class="alt-card__title">Use a microplastic filter bag</h3>
+        <p class="alt-card__text">Products like the Guppyfriend wash bag capture microplastic fibres during laundry cycles. Even one wash bag, used consistently, intercepts hundreds of thousands of fibres per wash before they reach rivers and oceans — and eventually human bodies.</p>
+      </div>
+      <div class="alt-card reveal reveal-d3">
+        <div class="alt-card__num">06</div>
+        <h3 class="alt-card__title">Support buy-local, buy-Irish</h3>
+        <p class="alt-card__text">When Irish consumers purchase from Chinese-owned companies, the money leaves the Irish economy without returning. Local retailers — including charity shops — support Irish jobs and reduce the trade deficit. The cost-of-living crisis is real, but Shein profits from it while worsening the conditions that cause it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     CTA
+═══════════════════════════════════════════════════════ -->
+<div class="cta-banner">
+  <h2 class="cta-banner__title">SHEIN'S MODEL ONLY WORKS WHILE WE FUND IT.</h2>
+  <p class="cta-banner__sub">Every purchase is a vote. Withdrawing even some of those purchases — and sharing what you know — is the most direct accountability available to us.</p>
+  <div class="cta-banner__actions">
+    <a href="#haul" class="btn btn--primary">Calculate Your Haul</a>
+    <a href="#alternatives" class="btn btn--outline">Find Alternatives</a>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SOURCES
+═══════════════════════════════════════════════════════ -->
+<section class="section section--dark" id="sources">
+  <div class="container">
+    <div class="sh reveal">
+      <div class="label sh__label" style="color:var(--green)">Every Figure Is Cited</div>
+      <h2 class="sh__title" style="color:var(--dark-text)">All data is sourced,<br>cross-referenced, and verifiable.</h2>
+    </div>
+    <div class="sources-grid reveal">
+      <div class="src-item"><strong>Shein Sustainability Reports</strong>2022, 2023, and 2024 Sustainability &amp; Social Impact Reports — sheingroup.com</div>
+      <div class="src-item"><strong>Public Eye</strong>"Toiling Away for Shein" (2021); Follow-up investigation (2024) — publiceye.ch</div>
+      <div class="src-item"><strong>BBC News</strong>"Inside the Chinese factories fuelling Shein's success" — January 2025</div>
+      <div class="src-item"><strong>CNN Business</strong>"Shein promised to tackle overwork. 75-hour weeks still common." — May 2024</div>
+      <div class="src-item"><strong>Stand.earth</strong>Fashion Accountability Report 2024 — ranked Shein #1 polluting retailer</div>
+      <div class="src-item"><strong>Yale Climate Connections / Grist</strong>"Shein is officially the biggest polluter in fast fashion" — Sept 2024</div>
+      <div class="src-item"><strong>European Parliament</strong>"The impact of textile production and waste on the environment" — 2022</div>
+      <div class="src-item"><strong>IUCN (2017)</strong>Primary Microplastics in the Ocean — 35% from synthetic textile washing</div>
+      <div class="src-item"><strong>Ellen MacArthur Foundation (2017)</strong>A New Textiles Economy — recycling and microplastics data</div>
+      <div class="src-item"><strong>UNEP</strong>Fashion industry water and greenhouse gas estimates</div>
+      <div class="src-item"><strong>InTek Logistics (2023)</strong>Air freight vs ocean freight — CO₂ per ton-mile comparison</div>
+      <div class="src-item"><strong>EPA Ireland</strong>Textiles Attitudes and Behaviours Report — Irish consumption data</div>
+      <div class="src-item"><strong>CSO Ireland</strong>Enforced Deprivation Report — poverty statistics</div>
+      <div class="src-item"><strong>Asia Floor Wage Alliance</strong>Living wage estimates for China — cited in CNN &amp; Public Eye</div>
+      <div class="src-item"><strong>Staunton, Devlin, Murphy, Heffernan (2025)</strong>Primary survey of 150 Irish students; interviews; desk research — full bibliography available on request</div>
+      <div class="src-item"><strong>Daniel Kahneman (2011)</strong>"Thinking, Fast and Slow" — System 1/System 2 decision-making framework</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">WORN<span>OUT</span></div>
+        <p class="footer__tagline">An independent resource documenting the environmental and human cost of Shein's ultra-fast fashion model. All data is sourced from public reports, independent investigations, and Shein's own disclosures.</p>
+        <p class="footer__disclaimer">Not affiliated with, sponsored by, or endorsed by Shein or any subsidiary. Calculator figures are lifecycle estimates based on published research. Individual impacts vary by garment composition.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Sections</div>
+        <ul class="footer__links">
+          <li><a href="#impact">Environmental Impact</a></li>
+          <li><a href="#labour">Labour &amp; Human Rights</a></li>
+          <li><a href="#manipulation">Manipulation Tactics</a></li>
+          <li><a href="#ireland">Ireland's Crisis</a></li>
+          <li><a href="#haul">Haul Calculator</a></li>
+          <li><a href="#alternatives">Alternatives</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Further Reading</div>
+        <ul class="footer__links">
+          <li><a href="https://www.publiceye.ch/en/topics/fashion" target="_blank" rel="noopener">Public Eye — Fashion</a></li>
+          <li><a href="https://goodonyou.eco" target="_blank" rel="noopener">Good On You</a></li>
+          <li><a href="https://earth.org" target="_blank" rel="noopener">Earth.Org</a></li>
+          <li><a href="https://fashionchecker.org" target="_blank" rel="noopener">Fashion Checker</a></li>
+          <li><a href="#sources">All Sources</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copy">&copy; 2025 Worn Out. Built to inform.</div>
+      <div class="footer__mission">Every figure cited. Every claim sourced. <em>No exceptions.</em></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/calculator.js?v=2.0"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

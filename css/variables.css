@@ -1,0 +1,76 @@
+/* ============================================================
+   WORN OUT — DESIGN TOKENS
+   Edit this file to restyle the entire site.
+   ============================================================ */
+
+:root {
+  /* ── Core Palette ────────────────────────────────────────── */
+  --cream:          #F5F0E8;
+  --cream-dark:     #EDE7D9;
+  --cream-mid:      #E4DDD0;
+  --ink:            #1A1612;
+  --ink-mid:        #3D342A;
+  --ink-light:      #6B5F52;
+  --ink-faint:      #A0957F;
+
+  /* ── Accent: Forest Green ────────────────────────────────── */
+  --green:          #2D6A4F;
+  --green-light:    #40916C;
+  --green-pale:     #D8EDDF;
+  --green-xpale:    #EEF7F1;
+
+  /* ── Data accents ────────────────────────────────────────── */
+  --amber:          #B45309;
+  --amber-pale:     #FEF3C7;
+  --rust:           #9B2335;
+  --rust-pale:      #FDE8EC;
+
+  /* ── Surfaces ────────────────────────────────────────────── */
+  --border:         rgba(26, 22, 18, 0.12);
+  --border-strong:  rgba(26, 22, 18, 0.28);
+  --surface-card:   #FFFFFF;
+  --surface-inset:  rgba(26, 22, 18, 0.04);
+
+  /* ── Dark sections ───────────────────────────────────────── */
+  --dark-bg:        #111009;
+  --dark-surface:   #1C190F;
+  --dark-border:    rgba(245,240,232,0.10);
+  --dark-text:      #F5F0E8;
+  --dark-muted:     #9A8C78;
+
+  /* ── Typography ──────────────────────────────────────────── */
+  --font-display:   'Bebas Neue', sans-serif;
+  --font-head:      'Fraunces', serif;
+  --font-body:      'Libre Baskerville', serif;
+  --font-ui:        'DM Sans', sans-serif;
+  --font-mono:      'DM Mono', monospace;
+
+  /* ── Type Scale ──────────────────────────────────────────── */
+  --text-xs:   0.72rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  2rem;
+  --text-4xl:  2.75rem;
+  --text-5xl:  3.75rem;
+  --text-hero: clamp(3.5rem, 9vw, 7.5rem);
+
+  /* ── Spacing ─────────────────────────────────────────────── */
+  --sp-1:0.25rem; --sp-2:0.5rem;  --sp-3:0.75rem; --sp-4:1rem;
+  --sp-5:1.25rem; --sp-6:1.5rem;  --sp-8:2rem;    --sp-10:2.5rem;
+  --sp-12:3rem;   --sp-16:4rem;   --sp-20:5rem;   --sp-24:6rem;
+
+  /* ── Radii ───────────────────────────────────────────────── */
+  --r-sm:3px; --r-md:6px; --r-lg:12px; --r-xl:20px; --r-full:9999px;
+
+  /* ── Shadows ─────────────────────────────────────────────── */
+  --shadow-sm:  0 1px 4px rgba(26,22,18,.07);
+  --shadow-md:  0 4px 16px rgba(26,22,18,.09);
+  --shadow-lg:  0 12px 40px rgba(26,22,18,.13);
+  --shadow-card:0 2px 8px rgba(26,22,18,.06), 0 0 0 1px var(--border);
+
+  /* ── Transitions ─────────────────────────────────────────── */
+  --t-fast:140ms ease; --t-base:280ms ease; --t-slow:560ms ease;
+}
